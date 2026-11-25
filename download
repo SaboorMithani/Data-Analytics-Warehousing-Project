@@ -1,0 +1,20 @@
+# secrets
+.env
+
+# data (raw CSVs are > 100 MB / must not be pushed)
+data/
+*.rar
+Pharma.Supply.Chain.Dataset/
+warehouse/*.duckdb
+warehouse/*.duckdb.wal
+
+# runtime
+logs/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# local wheel cache for slow networks
+docker/wheels/*.whl
+docker/wheels/*.whl.*
